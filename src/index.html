@@ -3,8 +3,39 @@
 	@@include('html/head.html', { "title":"Ozozon" })
 	<body>
 		@@include('html/header.html', {})
-		<main></main>
+		<main>
+			<section class="wash">
+				<div class="container">
+					<h1 class="wash__title">Про уборки</h1>
+					<div class="wash__subtitle">
+						Клинер приедет со всем необходимым для уборки. Стоимость уборки
+						рассчитывается от количества комнат.
+					</div>
+					<div class="wash__tabs">
+						<div class="wash__tabs-name">В каждый тариф входит уборка:</div>
+						<a class="wash__tab-item active" href="#tab-1"> В комнате </a>
+						<a class="wash__tab-item" href="#tab-2">На кухне</a>
+						<a class="wash__tab-item" href="#tab-3"> В ванной и туалете </a>
+						<a class="wash__tab-item" href="#tab-4"> В коридоре </a>
+					</div>
+					<div id="tab-1" class="wash__img wash__img--active"></div>
+					<div id="tab-2" class="wash__img"></div>
+					<div id="tab-3" class="wash__img"></div>
+					<div id="tab-4" class="wash__img"></div>
+					<div class="wash__legend">
+						<div class="wash__legend-item wash__legend-item--blue">
+							Поддерживающая уборка
+						</div>
+						<div class="wash__legend-item wash__legend-item--yellow">
+							Генеральная уборка
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		@@include('html/footer.html', {})
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/app.min.js"></script>
+		<script src="files/jQueryFormStyler/jquery.formstyler.min.js"></script>
 	</body>
 </html>

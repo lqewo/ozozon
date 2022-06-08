@@ -1,0 +1,6 @@
+@mixin btn {
+        background-image: -moz-linear-gradient( 0deg, rgb(130,234,173) 0%, rgb(111,224,242) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(130,234,173) 0%, rgb(111,224,242) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(130,234,173) 0%, rgb(111,224,242) 100%);
+        box-shadow: 0.342px 0.94px 4.8px 0.2px rgba(0, 0, 0, 0.2);
+}
