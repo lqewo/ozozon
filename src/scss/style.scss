@@ -16,10 +16,7 @@
     &__title {
         margin-top: 60px;
         margin-bottom: 36px;
-        font-size: 36px;
-        font-weight: 500;
-        text-align: center;
-        color: #000;
+
     }
 
     // .wash__subtitle
@@ -101,6 +98,7 @@
 
     &__legend {
         margin-top: 16px;
+        margin-bottom: 75px;
         color: #000;
         font-weight: 300;
         display: flex;
@@ -154,6 +152,257 @@
 
 
 // end wash
+
+// start type-clean
+
+.type-clean {
+
+    // .type-clean__title
+
+    &__title {
+        margin-bottom: 44px;
+    }
+
+    // .type-clean__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: #000;
+        margin: 0 82px;
+    }
+
+    // .type-clean__item
+
+    &__item {
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 0px 14.25px 0.75px rgba(0, 0, 0, 0.1);
+        max-width: 490px;
+        width: 100%;
+        min-height: 637px;
+        margin-bottom: 45px;
+    }
+
+
+    &__wrapper {
+        text-align: center;
+
+    }
+    // .type-clean__item-title
+
+    &__item-title {
+        margin-bottom: 34px;
+        margin-top: 40px;
+        font-size: 24px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    // .type-clean__item-title--green
+
+    &__item-title--green {
+        position: relative;
+        padding-left: 20px;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../img/green_point.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 13px;
+            height: 13px;
+            top: 6px;
+            left: 0;
+        }
+    }
+
+    // .type-clean__item-list
+
+    &__item-list {
+        padding: 0 50px;
+        font-weight: 300;
+    }
+
+    // .type-clean__item-item
+
+    &__item-item {
+        padding-left: 30px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 11px;
+            height: 8px;
+            background-image: url('../img/right.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            top: 9px;
+        }
+    }
+
+    // .type-clean__item-box
+
+    &__item-box {
+        position: absolute;
+        bottom: 0;
+        padding: 45px 75px;
+        padding-bottom: 32px;
+        border-top: 1px solid #f6f6f5;
+
+    }
+
+    // .type-clean__item-price
+
+    &__item-price {
+        display: flex;
+        align-items: center;
+        .item {
+
+            // .item__text
+
+            &__text {
+                font-size: 16px;
+                font-weight: 300;
+                width: 145px;
+                span {
+                    color: #999999;
+                    font-size: 14px;
+                }
+            }
+
+            // .item__price
+
+            &__price {
+                margin-left: 25px;
+                font-size: 38px;
+            }
+        }
+    }
+
+    // .type-clean__item-btn
+    &__item-box-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__item-btn {
+        @include btn;
+        margin: 0 auto;
+    }
+
+    // .type-clean__item-title--yellow
+
+    &__item-title--yellow {
+        position: relative;
+        padding-left: 20px;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../img/yellow_point.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 13px;
+            height: 13px;
+            top: 6px;
+            left: 0;
+        }
+    }
+
+    // .type-clean__item-plus
+
+    &__item-plus {
+        padding: 0 50px;
+        margin-top: 35px;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    // .type-clean__item-list-plus
+
+    &__item-list-plus {
+        font-weight: 300;
+        padding: 0 50px;
+    }
+
+    // .type-clean__item-plus-item
+
+    &__item-plus-item {
+        padding-left: 30px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '+';
+            font-size: 16px;
+            color: #6fe0f2;
+            font-weight: 300;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    // .type-clean__counter
+
+    &__counter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 14.25px 0.75px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 1051px;
+
+        color: #000;
+        padding: 70px 60px 0;
+    }
+
+    // .type-clean__counter-item
+
+    &__counter-item {
+        margin-bottom: 40px;
+    }
+
+    // .type-clean__counter-name
+
+    &__counter-name {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    // .type-clean__counter-subname
+
+    &__counter-subname {
+        font-size: 18px;
+        color: #999999;
+    }
+
+    // .type-clean__counter-count
+
+    &__counter-count {
+        text-align: center;
+        font-size: 48px;
+        color: #6fe0f1;
+    }
+
+    // .type-clean__counter-text
+
+    &__counter-text {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 17px;
+        color: #000;
+    }
+}
+
+
+
+
+// end type-clean
 
 // Media
 @import 'media';

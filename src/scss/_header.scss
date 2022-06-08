@@ -229,16 +229,7 @@
     // .header__box-btn
 
     &__box-btn {
-
         @include btn;
-        font-weight: 100;
-        color: #000;
-        font-size: 14px;
-        padding: 14px 32px 12px;
-            box-shadow: 0.342px 0.94px 4.8px 0.2px rgba(0, 0, 0, 0.2);
-            width: 189px;
-            height: 41px;
-            border-radius: 20px;
     }
 
     // .header__info
