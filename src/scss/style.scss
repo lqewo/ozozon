@@ -398,11 +398,249 @@
         color: #000;
     }
 }
-
-
-
-
 // end type-clean
+
+// start advantage
+
+.advantage {
+    background-image: url('../img/tree-bg.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+    min-height: 520px;
+
+    // .advantage__title
+
+    &__title {
+        padding-top: 96px;
+        padding-bottom: 80px;
+    }
+
+    // .advantage__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 110px;
+        padding-bottom: 70px;
+    }
+
+    // .advantage__item
+
+    &__item {
+        width: 200px;
+        padding-bottom: 20px;
+    }
+
+    // .advantage__item-img
+
+    &__item-img {
+        text-align: center;
+
+        min-height: 135px;
+        margin-bottom: 32px;
+    }
+
+    // .advantage__item-text
+
+    &__item-text {
+        color: #0d0e0e;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+// end advantage
+
+// start questions
+
+.questions {
+    background-color: #f8f8f8;
+    padding-bottom: 80px;
+
+    // .questions__title
+    &__title {
+
+        padding-top: 54px;
+    }
+
+    // .questions__inner
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 55px;
+    }
+
+    // .questions__item
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+            width: 334px;
+            height: 116px;
+            margin-bottom: 40px;
+        & + & {
+            margin-left: 35px;
+        }
+        &.active {
+            .questions__item-text {
+                color: #4bd0e4;
+            }
+        }
+    }
+
+    // .questions__item-text
+
+    &__item-text {
+        color: #000000;
+        font-size: 18px;
+        padding-left: 55px;
+    }
+
+    // .questions__item-img
+
+    &__item-img {
+        padding-right: 22px;
+    }
+
+    // .questions__list
+
+    &__list {
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+        max-width: 1079px;
+        width: 100%;
+        height: 276px;
+        padding: 30px 0;
+        padding-right: 130px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    // .questions__list-item
+
+    &__list-item {
+        margin-left: 132px;
+        width: 350px;
+        list-style: auto;
+        color: #000;
+        font-weight: 300;
+        margin-bottom: 5px;
+        text-decoration: underline dashed;
+        line-height: 24px;
+
+    }
+}
+
+
+// end questions
+
+// start review
+
+.review {
+
+    // .sreview__title
+    &__title {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    // .review__wrapper
+
+    &__wrapper {
+        background-image: url('../img/comment-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    // .review__comment
+
+    &__comment {
+        max-width: 903px;
+        margin: 0 auto;
+        padding-top: 80px;
+        border-radius: 20px;
+
+    }
+
+    // .review__btn
+    &__btn {
+        padding-top: 25px;
+        padding-bottom: 78px;
+        text-align: center;
+    }
+    &__btn-btn {
+
+        border-radius: 20px;
+        box-shadow: 0px 1px 4.8px 0.2px rgba(0, 0, 0, 0.4);
+        background-color: #fff;
+        width: 207px;
+        height: 45px;
+        color: #000;
+    }
+
+    .wrapper {
+        margin-right: 20px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+}
+
+
+
+.swiper-button-prev, .swiper-button-next {
+    background-color: #f0f0f0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    top: 60%;
+
+}
+
+.swiper-button-prev {
+    left: 163px;
+
+    &::after {
+        content: '';
+        width: 6px;
+        height: 7px;
+        background-image: url('../img/arrow-left.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.swiper-button-next {
+    right: 182px;
+    &::after {
+        content: '';
+        width: 6px;
+        height: 7px;
+        background-image: url('../img/arrow-right.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+
+// end review
 
 // Media
 @import 'media';

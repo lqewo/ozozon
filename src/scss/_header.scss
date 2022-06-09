@@ -119,7 +119,23 @@
 
     &__bottom {
         margin-top: 230px;
+    }
 
+    &__bottom-telephone {
+        background-color: #6ed4e4;
+        z-index: 10;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: fixed;
+        top: 100px;
+        right: 50px;
+        > img {
+            position: absolute;
+            top: 27%;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
 
     // .header__title
